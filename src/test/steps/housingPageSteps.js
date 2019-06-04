@@ -3,9 +3,7 @@ const HousingPage = require('../support/page-objects/housingPage')
 const sortValues = require('../support/data/housingSortingOptions')
 const housingPage = new HousingPage()
 
-const { Given } = require('cucumber')
-const { Then } = require('cucumber')
-const { When } = require('cucumber')
+const { Given, Then, When } = require('cucumber')
 
 Given(
   /^I open housing page$/,
