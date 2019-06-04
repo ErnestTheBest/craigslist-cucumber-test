@@ -1,0 +1,5 @@
+node_modules/
+junit-report/
+chromedriver-error/
+selenium-server-logs/
+.idea/
