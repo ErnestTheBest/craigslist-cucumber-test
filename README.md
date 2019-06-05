@@ -1,5 +1,5 @@
 # craigslist.org test suite
-A demo test suite for craigslist.org
+A demo test suite for craigslist.org using cucumber and webdriverIO
 
 ## Disclamer
 This setup requires **node 10.0.0+** to run
@@ -23,6 +23,6 @@ This setup requires **node 10.0.0+** to run
     * To run parallel firefox and chrome `npm run test:server`
     
 ## Useful links
-* Mocha test runner [documentation](https://mochajs.org/#features).
-* WebdriverIO test runner [configuration documentation](https://webdriver.io/docs/configurationfile.html).
-* WebdriverIO API [documentation](https://webdriver.io/docs/api.html).
+* Cucumber test runner [documentation](https://webdriver.io/docs/frameworks.html#using-cucumber) and [example](https://github.com/webdriverio/cucumber-boilerplate).
+* WebdriverIO v4 test runner [configuration documentation](http://v4.webdriver.io/guide/testrunner/configurationfile.html).
+* WebdriverIO API [documentation](http://v4.webdriver.io/api.html).
