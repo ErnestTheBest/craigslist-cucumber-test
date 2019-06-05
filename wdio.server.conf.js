@@ -59,10 +59,10 @@ exports.config = {
       maxInstances: 5,
       browserName: 'firefox'
     },
-    // {
-    //   maxInstances: 5,
-    //   browserName: 'chrome'
-    // }
+    {
+      maxInstances: 5,
+      browserName: 'chrome'
+    }
   ],
   sync: true,
   logLevel: 'silent',
