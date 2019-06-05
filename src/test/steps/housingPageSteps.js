@@ -1,9 +1,8 @@
 const assert = require('assert')
+const { Given, Then, When } = require('cucumber')
 const HousingPage = require('../support/page-objects/housingPage')
 const sortValues = require('../support/data/housingSortingOptions')
 const housingPage = new HousingPage()
-
-const { Given, Then, When } = require('cucumber')
 
 Given(
   /^I open housing page$/,
