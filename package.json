@@ -6,7 +6,7 @@
   "scripts": {
     "stylecheck": "standard ./src/**/*.js --fix",
     "test:chrome": "wdio wdio.chrome.conf.js",
-    "test:server": "wdio wdio.server.conf.js"
+    "test:server": "wdio wdio.selenium.standalone.conf.js"
   },
   "keywords": [],
   "author": "",
