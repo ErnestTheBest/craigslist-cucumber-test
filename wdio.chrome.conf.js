@@ -3,6 +3,10 @@ exports.config = {
     './src/test/features/**/*.feature'
   ],
   exclude: [],
+  runner: 'local',
+  hostname: 'localhost',
+  port: 9515,
+  path: '/',
   services: ['chromedriver'],
   maxInstances: 10,
   capabilities: [{
@@ -20,12 +24,7 @@ exports.config = {
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   framework: 'cucumber',
-  reporters: ['spec', 'junit'],
-  reporterOptions: {
-    junit: {
-      outputDir: './junit-report'
-    }
-  },
+  reporters: ['spec'],
   cucumberOpts: {
     require: [
       './src/test/steps/housingPageSteps.js'

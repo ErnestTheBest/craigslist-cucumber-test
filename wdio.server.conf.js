@@ -3,6 +3,10 @@ exports.config = {
     './src/test/features/**/*.feature'
   ],
   exclude: [],
+  runner: 'local',
+  hostname: 'localhost',
+  port: 4444,
+  path: '/wd/hub',
   services: ['selenium-standalone'],
   seleniumLogs: './selenium-server-logs/',
   seleniumInstallArgs: {
@@ -55,10 +59,10 @@ exports.config = {
       maxInstances: 5,
       browserName: 'firefox'
     },
-    {
-      maxInstances: 5,
-      browserName: 'chrome'
-    }
+    // {
+    //   maxInstances: 5,
+    //   browserName: 'chrome'
+    // }
   ],
   sync: true,
   logLevel: 'silent',
@@ -71,12 +75,7 @@ exports.config = {
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   framework: 'cucumber',
-  reporters: ['spec', 'junit'],
-  reporterOptions: {
-    junit: {
-      outputDir: './junit-report'
-    }
-  },
+  reporters: ['spec'],
   cucumberOpts: {
     require: [
       './src/test/steps/housingPageSteps.js'
